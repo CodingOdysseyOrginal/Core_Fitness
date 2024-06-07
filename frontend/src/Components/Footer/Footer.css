@@ -1,0 +1,18 @@
+footer {
+    background-color: bisque;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .SocialMedia ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .SocialMedia li {
+    display: inline;
+    margin: 0 10px;
+  }

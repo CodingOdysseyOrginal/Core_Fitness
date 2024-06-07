@@ -1,0 +1,47 @@
+:root {
+  --silver: #C0C0C0;
+  --black: #000000;
+  --gold: #FFD700;
+  --navyBlue: #000040;
+}
+
+#Home {
+    position: relative;
+    background-image: url('./Home_Img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+#Home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 37, 16, 0.5); /* Soft gray */
+}
+  
+  .Homeintro {
+    position: relative;
+    z-index: 2;
+    background-color: #C0C0C0;
+    margin-bottom: 400px;
+    padding: 10px;
+  }
+  .Homeintro h2{
+    font-size: 2em;
+  }
+  .Homeintro button{
+    background-color: var(--silver);
+    padding: 20px;
+    border-radius: 10%;
+    cursor: pointer;
+  }
+  

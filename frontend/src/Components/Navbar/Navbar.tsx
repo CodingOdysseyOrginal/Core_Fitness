@@ -34,7 +34,7 @@ const Navbar = () => {
             <img src={logo} alt="Gorilla" />
           </a>
           <a className="title" href="/">
-            Silverback Strength
+            Silverback <span>Strength</span>
           </a>
         </div>
 
@@ -57,7 +57,7 @@ const Navbar = () => {
             <button className="sidebar-toggle" onClick={toggleSidebar}>
               <img src={MenuIcon} height={50} alt="Toggle sidebar" />
             </button>
-            <h1>Silverback Strength</h1>
+            <h1 className="title">Silverback <span>Strength</span></h1>
           </div>
         </div>
 
@@ -68,7 +68,7 @@ const Navbar = () => {
             </button>
             <a href="/" className="sidebar-logo">
               <img src={logo} alt="Gorilla" />
-              <h1>Silverback Strength</h1>
+              <h1 className="title">Silverback <span>Strength</span></h1>
             </a>
           </div>
           <ul>
