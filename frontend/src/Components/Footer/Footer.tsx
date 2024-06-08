@@ -4,15 +4,27 @@ import "./Footer.css";
 const Footer: React.FC = () => {
   return (
     <footer>
-      <div>
-        <div className="SocialMedia">
+      <div className="containerFooter">
+        <div className="FooterSplit">
+          <h1>Follow Us!</h1>
           <ul>
-            <li>Tiktok</li>
-            <li>Instagram</li>
-            <li>LinkedIn</li>
+            <li>
+              <a href="#">
+                <i className="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i className="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </li>
           </ul>
         </div>
-        
       </div>
     </footer>
   );

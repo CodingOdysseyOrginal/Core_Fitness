@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import "./Navbar.css";
 import logo from "./logo.svg";
 import MenuIcon from "./MenuIcon.svg";
@@ -6,6 +7,29 @@ import CloseIcon from "./CloseIcon.svg";
 import logo3 from "./logo3.svg";
 import scrollImg from "./scrollImg.svg";
 import scrollImg1 from "./scrollImg2.svg";
+
+const sidebarVariants = {
+  open: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+  closed: {
+    opacity: 0,
+    x: "100%",
+    transition: {
+      staggerChildren: 0.2,
+      staggerDirection: -1,
+    },
+  },
+};
+
+const itemVariants = {
+  open: { opacity: 1, y: 0 },
+  closed: { opacity: 0, y: -20 },
+};
 
 const Navbar = () => {
   const [sidebarVisible, setSidebarVisible] = useState(false);
@@ -73,11 +97,15 @@ const Navbar = () => {
           <button className="sidebar-toggle" onClick={toggleSidebar}>
             <img src={sidebarVisible ? CloseIcon : MenuIcon} height={50} alt={sidebarVisible ? "Close sidebar" : "Toggle sidebar"} />
           </button>
-          <h1 className="title"><a href="/">Silverback <span>Strength</span> </a></h1>
+          <h1 className="title"><a href="/">Silverback <span>Strength</span></a></h1>
         </div>
       </div>
 
-      <div className={`sidebar ${sidebarVisible ? "visible" : ""}`}>
+      <motion.div
+        className={`sidebar ${sidebarVisible ? "visible" : ""}`}
+        animate={sidebarVisible ? "open" : "closed"}
+        variants={sidebarVariants}
+      >
         <div className="sidebar-header">
           <button className="sidebar-toggle" onClick={toggleSidebar}>
             <img src={CloseIcon} alt="Close sidebar" />
@@ -88,14 +116,14 @@ const Navbar = () => {
           </a>
         </div>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/personaltrainers">Personal Trainers</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/membership">Memberships</a></li>
-          <li><a href="/contact">Contact us</a></li>
+          <motion.li variants={itemVariants}><a href="/">Home</a></motion.li>
+          <motion.li variants={itemVariants}><a href="/about">About</a></motion.li>
+          <motion.li variants={itemVariants}><a href="/personaltrainers">Personal Trainers</a></motion.li>
+          <motion.li variants={itemVariants}><a href="/services">Services</a></motion.li>
+          <motion.li variants={itemVariants}><a href="/membership">Memberships</a></motion.li>
+          <motion.li variants={itemVariants}><a href="/contact">Contact us</a></motion.li>
         </ul>
-      </div>
+      </motion.div>
     </nav>
   );
 };

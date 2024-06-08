@@ -1,18 +1,76 @@
+:root {
+  --silver: #C0C0C0;
+  --black: #000000;
+  --gold: #FFD700;
+  --navyBlue: #000040;
+}
+
 footer {
-    background-color: bisque;
+    background-color: var(--navyBlue);
     padding: 10px;
     text-align: center;
     position: relative;
     bottom: 0;
     width: 100%;
+    color: white;
+    height: 70vh;
+  }
+  .containerFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
   
-  .SocialMedia ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .SocialMedia li {
-    display: inline;
-    margin: 0 10px;
-  }
+.FooterSplit ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.FooterSplit ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.FooterSplit ul li a {
+  position: relative; 
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: .5s;
+}
+
+.FooterSplit ul li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: white;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.FooterSplit ul li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px white;
+}
+
+.FooterSplit ul li a:hover {
+  color: white;
+  box-shadow: 0 0 5px white;
+  text-shadow: 0 0 5px white;
+}

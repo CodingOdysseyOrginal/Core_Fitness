@@ -6,18 +6,19 @@
 }
 
 #Home {
-    position: relative;
-    background-image: url('./Home_Img.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-  }
+  position: relative;
+  background-image: url('./Home_Img.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
   
+}
+
 #Home::before {
   content: '';
   position: absolute;
@@ -25,23 +26,84 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(128, 37, 16, 0.5); /* Soft gray */
+  background-color: rgba(18, 82, 127, 0.5); 
 }
-  
-  .Homeintro {
-    position: relative;
-    z-index: 2;
-    background-color: #C0C0C0;
-    margin-bottom: 400px;
-    padding: 10px;
-  }
-  .Homeintro h2{
-    font-size: 2em;
-  }
-  .Homeintro button{
-    background-color: var(--silver);
-    padding: 20px;
-    border-radius: 10%;
-    cursor: pointer;
-  }
-  
+
+.Homeintro {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 200px;
+}
+
+.Homeintro h1 {
+  font-size: 2em;
+  margin: 20px;
+}
+
+.Homeintro button {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15%;
+  cursor: pointer;
+  width: 160px;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: larger;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.Homeintro button:hover {
+  background-color: var(--navyBlue);
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.Homeintro a {
+  color: inherit; 
+  text-decoration: none; 
+}
+
+.secondsection {
+  background-color: var(--silve);
+  position: relative;
+  z-index: 3;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--black);
+  text-align: center;
+  padding: 40px;
+  margin: 50px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+.secondsection h1{
+  padding-bottom: 70px;
+}
+.secondsection h2 {
+  padding-bottom: 50px;
+}
+.secondsection button{
+  color: white;
+  background-color: var(--navyBlue);
+  padding: 20px;
+  border-radius: 25%;
+  cursor: pointer;
+  width: 210px;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: larger;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s, box-shadow 0.3s; 
+}
+.secondsection button:hover {
+  background-color: 
+  white;
+  color: var(--navyBlue);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
