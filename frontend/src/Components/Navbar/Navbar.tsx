@@ -4,12 +4,8 @@ import logo from "./logo.svg";
 import MenuIcon from "./MenuIcon.svg";
 import CloseIcon from "./CloseIcon.svg";
 import logo3 from "./logo3.svg";
-
-// Things to fix
-// 1. fix border while scrolling on navbar as it leaks over
-// 2. adjust colors and make font stay out more (maybe look into good fonts that are thick)
-// 3. double check sidebar for navbar to make sure it works correctly with any adjustments
-// finally adjust colors to match syle of website site. look into navyblue maybe (also see about changing gorillas to white on navbar when you scroll. not sure if possible but worth a shot)
+import scrollImg from "./scrollImg.svg";
+import scrollImg1 from "./scrollImg2.svg";
 
 const Navbar = () => {
   const [sidebarVisible, setSidebarVisible] = useState(false);
@@ -52,21 +48,23 @@ const Navbar = () => {
           <ul>
             <li><a href="/about">About</a></li>
             <li><a href="/personaltrainers">Personal Trainers</a></li>
+            <li><a href="/">Home</a></li>
           </ul>
         </div>
         <div className="logo">
           <a href="/">
-            <img src={logo} alt="Gorilla" />
+            <img src={scrolled ? scrollImg : logo} alt="Gorilla" />
           </a>
           <a className="title" href="/">
             Silverback <span>Strength</span>
           </a>
           <a href="/">
-            <img src={logo3} alt="Gorilla" />
+            <img src={scrolled ? scrollImg1 : logo3} alt="Gorilla" />
           </a>
         </div>
         <div className="navigation">
           <ul>
+            <li><a href="/Contacts">Contact</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/membership">Memberships</a></li>
           </ul>
@@ -75,7 +73,7 @@ const Navbar = () => {
           <button className="sidebar-toggle" onClick={toggleSidebar}>
             <img src={sidebarVisible ? CloseIcon : MenuIcon} height={50} alt={sidebarVisible ? "Close sidebar" : "Toggle sidebar"} />
           </button>
-          <h1 className="title">Silverback <span>Strength</span> </h1>
+          <h1 className="title"><a href="/">Silverback <span>Strength</span> </a></h1>
         </div>
       </div>
 
@@ -85,15 +83,17 @@ const Navbar = () => {
             <img src={CloseIcon} alt="Close sidebar" />
           </button>
           <a href="/" className="sidebar-logo">
-            <img src={logo} alt="Gorilla" />
+            <img src={scrolled ? scrollImg : logo} alt="Gorilla" />
             <h1 className="title">Silverback <span>Strength</span></h1>
           </a>
         </div>
         <ul>
+          <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/personaltrainers">Personal Trainers</a></li>
           <li><a href="/services">Services</a></li>
           <li><a href="/membership">Memberships</a></li>
+          <li><a href="/contact">Contact us</a></li>
         </ul>
       </div>
     </nav>
