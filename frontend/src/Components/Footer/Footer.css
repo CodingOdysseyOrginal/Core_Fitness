@@ -23,6 +23,7 @@ footer {
   align-items: center; 
   max-width: 100%; 
   margin: 0 auto;
+  overflow: hidden; 
 }
 
 .FooterSplit, .contactSection, .infoSection {
@@ -119,7 +120,7 @@ button.contactButton {
 }
 
 button.contactButton:hover {
-  background-color: var(--silver);
+  background-color: var(--gold);
   color: var(--navyBlue);
   box-shadow: 0 0 5px var(--gold); 
   text-shadow: 0 0 5px var(--gold); 

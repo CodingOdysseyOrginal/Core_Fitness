@@ -1,11 +1,35 @@
-import React from "react";
+import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "./Footer.css";
 
 const Footer: React.FC = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: false, 
+    threshold: 0.5, 
+  });
+
+  const footerRef = useRef<HTMLDivElement>(null);
+
   return (
-    <footer>
-      <div className="containerFooter">
-        <div className="FooterSplit">
+    <footer ref={ref}>
+      <motion.div
+        className="containerFooter"
+        ref={footerRef}
+        animate={inView ? "visible" : "hidden"}
+        initial="hidden"
+      >
+        <motion.div
+          className="FooterSplit"
+          variants={{
+            hidden: { opacity: 0, x: -1000 },
+            visible: {
+              opacity: 1,
+              x: 0,
+              transition: { delay: 0, duration: 1.5 },
+            },
+          }}
+        >
           <h1>Follow Us!</h1>
           <ul>
             <li>
@@ -24,8 +48,18 @@ const Footer: React.FC = () => {
               </a>
             </li>
           </ul>
-        </div>
-        <div className="contactSection">
+        </motion.div>
+        <motion.div
+          className="contactSection"
+          variants={{
+            hidden: { opacity: 0, x: 1000 },
+            visible: {
+              opacity: 1,
+              x: 0,
+              transition: { delay: 0.5, duration: 1.5 },
+            },
+          }}
+        >
           <h2>Contact Us</h2>
           <p>
             Email: <a href="mailto:info@gym.com">info@gym.com</a>
@@ -37,16 +71,26 @@ const Footer: React.FC = () => {
           <a href="/contact">
             <button className="contactButton">Contact us!</button>
           </a>
-        </div>
-        <div className="infoSection">
+        </motion.div>
+        <motion.div
+          className="infoSection"
+          variants={{
+            hidden: { opacity: 0, x: -1000 },
+            visible: {
+              opacity: 1,
+              x: 0,
+              transition: { delay: 1, duration: 1.5 },
+            },
+          }}
+        >
           <h2>Opening Hours</h2>
           <ul>
             <li>Monday - Friday: 6:00 AM - 9:00 PM</li>
             <li>Saturday: 8:00 AM - 6:00 PM</li>
             <li>Sunday: 8:00 AM - 4:00 PM</li>
           </ul>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </footer>
   );
 };
