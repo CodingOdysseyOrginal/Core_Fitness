@@ -1,4 +1,4 @@
-/* HomePage.css */
+
 :root {
   --silver: #C0C0C0;
   --black: #000000;
@@ -50,6 +50,7 @@
   border-radius: 15%;
   cursor: pointer;
   width: 160px;
+  margin-top: 40px;
   margin-left: 20px;
   font-weight: 600;
   font-size: larger;
@@ -143,6 +144,26 @@
   overflow: hidden; 
 }
 
+.testimonial {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  height:vh;
+}
+
+.testimonial p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.testimonial h3 {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
 .cards-container {
   display: flex;
   justify-content: center;
@@ -192,9 +213,9 @@
 
 .card button:hover {
   background-color: #0056b3;
-}
+  }
 
-.card::before {
+  .card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -275,6 +296,7 @@
   }
 }
 
+
 /* Media queries for phones */
 @media (max-width: 480px) {
   .Homeintro {
@@ -333,4 +355,65 @@
   .card {
     max-width: 200px;
   }
+}
+
+@import 'react-responsive-carousel/lib/styles/carousel.min.css';
+.forthsection {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.forthsection h1 {
+  margin-bottom: 40px;
+  font-size: 2em;
+  color: #333;
+}
+
+.forthsection h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #555;
+}
+
+.testimonial {
+  background-color: white;
+  border-radius: 8px;
+  padding: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 50px;
+  width: 80%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.forthsection button{
+  padding: 15px 30px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: larger;
+}
+.forthsection button:hover{
+  background-color: #FFD700;
+  color: #000000;
+  border: #000000 solid 1px;
+
+}
+
+.testimonial p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.testimonial h3 {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.carousel .control-dots .dot {
+  background-color: blue; 
 }

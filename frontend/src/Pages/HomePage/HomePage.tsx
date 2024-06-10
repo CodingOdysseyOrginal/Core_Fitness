@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import "./HomePage.css";
 import Card from "../../Components/Card/Card";
 import Weights from "./Weights.jpg";
@@ -33,6 +35,7 @@ const rightItemVariants = {
 const HomePage = () => {
   const [ref, inView] = useInView({ threshold: 0.1 });
   const [cardsRef, cardsInView] = useInView({ threshold: 0.1 });
+  const [testimonialRef, testimonialInView] = useInView({ threshold: 0.1 });
 
   return (
     <>
@@ -46,7 +49,7 @@ const HomePage = () => {
           <motion.h1 variants={leftItemVariants}>
             Focus on enhancing your body and sharpening your mind
           </motion.h1>
-          <motion.h1 variants={leftItemVariants}>
+          <motion.h1 variants={rightItemVariants}>
             We are more than a gym. We are a Community!
           </motion.h1>
           <motion.a href="/membership" variants={leftItemVariants}>
@@ -102,6 +105,43 @@ const HomePage = () => {
             />
           </motion.div>
         </motion.div>
+      </div>
+      <div className="forthsection" ref={testimonialRef}> 
+        <motion.h1 variants={leftItemVariants}>
+          Work with our high-level trainers
+        </motion.h1>
+        <motion.h2 variants={leftItemVariants}>
+          We employ the finest trainers! Hear what our community has to say!
+        </motion.h2>
+        <Carousel
+          autoPlay
+          infiniteLoop
+          showThumbs={false}
+          showStatus={false}
+          showIndicators={true}
+          interval={5000}
+          transitionTime={500}
+          showArrows={false}
+          stopOnHover={true}
+        >
+          <div className="testimonial">
+            <p>"I've achieved my fitness goals thanks to the professional guidance of these trainers!"</p>
+            <h3>John Doe</h3>
+          </div>
+          <div className="testimonial">
+            <p>"The trainers are knowledgeable and really care about your progress."</p>
+            <h3>Jane Smith</h3>
+          </div>
+          <div className="testimonial">
+            <p>"I feel more motivated and stronger every day thanks to the great trainers here."</p>
+            <h3>Mike Johnson</h3>
+          </div>
+          <div className="testimonial">
+            <p>"The personalized training plans have made a huge difference in my fitness journey."</p>
+            <h3>Emily Davis</h3>
+          </div>
+        </Carousel>
+        <a href="/personaltrainers"><button>Personal Trainers</button></a>
       </div>
     </>
   );
