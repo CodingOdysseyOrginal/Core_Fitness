@@ -107,12 +107,18 @@ const HomePage = () => {
         </motion.div>
       </div>
       <div className="forthsection" ref={testimonialRef}> 
-        <motion.h1 variants={leftItemVariants}>
-          Work with our high-level trainers
-        </motion.h1>
-        <motion.h2 variants={leftItemVariants}>
-          We employ the finest trainers! Hear what our community has to say!
-        </motion.h2>
+        <motion.div
+          initial="hidden"
+          animate={testimonialInView ? "visible" : "hidden"}
+          variants={containerVariants}
+        >
+          <motion.h1 variants={leftItemVariants}>
+            Work with our high-level trainers
+          </motion.h1>
+          <motion.h2 variants={leftItemVariants}>
+            We employ the finest trainers! Hear what our community has to say!
+          </motion.h2>
+        </motion.div>
         <Carousel
           autoPlay
           infiniteLoop
@@ -125,20 +131,20 @@ const HomePage = () => {
           stopOnHover={true}
         >
           <div className="testimonial">
-            <p>"I've achieved my fitness goals thanks to the professional guidance of these trainers!"</p>
-            <h3>John Doe</h3>
+            <p>"The supportive gym community also plays a big role, offering encouragement and motivation every step of the way. With top-notch equipment and a positive atmosphere, I've seen consistent improvements in my strength, endurance, and overall well-being. They have helped me achieve my goals!"</p>
+            <h3>Bruce Wayne</h3>
           </div>
           <div className="testimonial">
-            <p>"The trainers are knowledgeable and really care about your progress."</p>
-            <h3>Jane Smith</h3>
+            <p>"The gym is equipped with top-notch equipment, which ensures that I have everything I need to achieve my fitness goals. This combination of expert guidance and excellent facilities has led to consistent improvements in my strength, endurance, and overall well-being."</p>
+            <h3>Margaret Hamilton</h3>
           </div>
           <div className="testimonial">
-            <p>"I feel more motivated and stronger every day thanks to the great trainers here."</p>
-            <h3>Mike Johnson</h3>
+            <p>"I feel more motivated and stronger every day thanks to the great trainers here. Their tailored approach ensures that my workouts align perfectly with my goals and current fitness level, leading to consistent improvements in my strength, endurance, and overall well-being."</p>
+            <h3>Ned Stark</h3>
           </div>
           <div className="testimonial">
-            <p>"The personalized training plans have made a huge difference in my fitness journey."</p>
-            <h3>Emily Davis</h3>
+            <p>"The plans are continually adjusted based on my performance, ensuring I am always challenged without being overwhelmed. As a result, I've seen consistent improvements in my strength, endurance, and overall well-being."</p>
+            <h3>Mary Shelley</h3>
           </div>
         </Carousel>
         <a href="/personaltrainers"><button>Personal Trainers</button></a>
