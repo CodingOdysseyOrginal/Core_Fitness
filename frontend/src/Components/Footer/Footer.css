@@ -34,6 +34,7 @@ footer {
 .FooterSplit h1, .contactSection h2, .infoSection h2 {
   font-size: 22px;
   margin-bottom: 15px;
+  color: white;
   text-shadow: var(--textShadow);
 }
 
@@ -94,6 +95,7 @@ footer {
 
 .contactSection p, .infoSection ul li {
   margin: 5px 0;
+  color: white;
 }
 
 .contactSection a, .infoSection a {
