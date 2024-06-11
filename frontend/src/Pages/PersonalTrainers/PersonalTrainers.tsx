@@ -5,3 +5,4 @@ const PersonalTrainers = () => {
 };
 
 export default PersonalTrainers;
+ 

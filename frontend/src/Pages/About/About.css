@@ -107,12 +107,15 @@ p {
 .gym-facilities p {
   margin-left: 20px;
 }
-.facility-button{
+
+.facility-button {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
+  margin-top: 20px;
 }
-.facility-button button{
+
+.facility-button button {
   color: white;
   background-color: #007BFF;
   padding: 20px;
@@ -125,7 +128,8 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   transition: background-color 0.3s, box-shadow 0.3s; 
 }
-.facility-button button:hover{
+
+.facility-button button:hover {
   background-color: #FFD700;
   color: black;
 }
@@ -149,4 +153,19 @@ p {
   .history-text {
     padding-right: 0;
   }
+
+  .gym-facilities {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .facility-button {
+    flex-direction: column;
+  }
+
+  .facility-button button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
 }
