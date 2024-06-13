@@ -8,6 +8,7 @@ import Membership from "./Pages/Memberships/Memberships";
 import "./index.css";
 import HomePage from "./Pages/HomePage/HomePage";
 import Footer from "./Components/Footer/Footer";
+import TrainerDetails from "./Pages/PersonalTrainerDetails/TrainerDetails";
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/personaltrainers" element={<PersonalTrainers />} />
+        <Route path="/trainer/:id" element={<TrainerDetails />} />
         <Route path="/membership" element={<Membership />} />
       </Routes>
       <Footer/>

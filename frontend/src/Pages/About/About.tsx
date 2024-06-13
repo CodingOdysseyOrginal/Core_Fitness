@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./About.css";
 import gym from "./GymPicture.jpg";
 import Founder from "./Founder.jpg";
@@ -7,16 +8,39 @@ const About: React.FC = () => {
   return (
     <section id="about" className="about-section">
       <div className="content">
-        <h1>Our History</h1>
+        <motion.div
+          initial={{ opacity: 0, x: -300 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5 }}
+        >
+          <h1>Our History</h1>
+        </motion.div>
         <div className="history-content">
-          <div className="history-text">
+          <motion.div
+            className="history-text"
+            initial={{ opacity: 0, x: -300 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5, delay: 0.3 }}
+          >
             <p>
               Silverback Strength was born out of a personal journey. Our founder, Sarah, struggled to find a sense of community at the gyms she frequented. Despite the abundance of equipment and classes, she felt disconnected and lacked the support she needed to reach her fitness goals.
             </p>
-          </div>
-          <img src={Founder} alt="Founder" className="founder-image" />
+          </motion.div>
+          <motion.img
+            src={Founder}
+            alt="Founder"
+            className="founder-image"
+            initial={{ opacity: 0, x: 300 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5, delay: 0.6 }}
+          />
         </div>
-        <div className="founder-section">
+        <motion.div
+          className="founder-section"
+          initial={{ opacity: 0, x: 300 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5, delay: 0.9 }}
+        >
           <h1>The Mission</h1>
           <p>
             At Silverback Strength, our mission is to foster a supportive and inclusive community where everyone feels empowered to achieve their fitness goals. Our values are:
@@ -28,11 +52,23 @@ const About: React.FC = () => {
             <li><strong>Excellence:</strong> Striving for the highest standards in coaching, facilities, and member experience.</li>
             <li><strong>Innovation:</strong> Continuously evolving to provide the best fitness solutions and experiences.</li>
           </ul>
-        </div>
-        <div className="facility-section">
+        </motion.div>
+        <motion.div
+          className="facility-section"
+          initial={{ opacity: 0, x: -300 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5, delay: 1.2 }}
+        >
           <h1>Our Facility</h1>
           <div className="gym-facilities">
-            <img src={gym} alt="Gym Facility" className="facility-image" />
+            <motion.img
+              src={gym}
+              alt="Gym Facility"
+              className="facility-image"
+              initial={{ opacity: 0, x: 300 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.5, delay: 1.5 }}
+            />
             <div>
               <p>
                 Our facility includes:
@@ -49,10 +85,10 @@ const About: React.FC = () => {
           </div>
           <div className="facility-button">
             <a href="./services">
-          <button>Services</button>
-          </a>
+              <button>Services</button>
+            </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

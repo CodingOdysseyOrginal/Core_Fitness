@@ -1,0 +1,55 @@
+.personal-trainers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    background-color: white;
+    padding: 60px;
+  }
+  
+  .trainer-card {
+    border: 1px solid gray;
+    padding: 16px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trainer-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .trainer-details {
+    text-align: center;
+  }
+  
+  .trainer-details img {
+    width: 300px;
+    height: auto;
+  }
+  
+  /* Media Query for Tablets */
+  @media screen and (max-width: 1024px) {
+    .personal-trainers {
+      padding: 40px;
+    }
+  
+    .trainer-card {
+      width: 45%; 
+      margin: 10px;
+    }
+  }
+  
+  /* Media Query for Phones */
+  @media screen and (max-width: 600px) {
+    .personal-trainers {
+      padding: 20px;
+    }
+  
+    .trainer-card {
+      width: 100%; 
+      margin-bottom: 20px;
+    }
+  }
+  
