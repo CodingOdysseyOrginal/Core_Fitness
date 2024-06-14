@@ -10,6 +10,7 @@ import Footer from "./Components/Footer/Footer";
 import TrainerDetails from "./Pages/PersonalTrainerDetails/TrainerDetails";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import "./index.css";
+import FAQS from "./Pages/FAQS/FAQS";
 
 const App: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/FAQS" element={<FAQS />} />
         <Route path="/personaltrainers" element={<PersonalTrainers />} />
         <Route path="/trainer/:id" element={<TrainerDetails />} />
         <Route path="/membership" element={<Membership />} />

@@ -5,8 +5,8 @@
   gap: 16px;
   background-color: white;
   padding: 60px;
-  max-width: 1200px; 
-  margin: 0 auto; 
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .trainer-card {
@@ -48,7 +48,7 @@
 @media screen and (max-width: 600px) {
   .personal-trainers {
     padding: 20px;
-    max-width: 90%; 
+    max-width: 90%;
   }
 
   .trainer-card {
@@ -64,11 +64,15 @@
   }
 
   .trainer-card {
-    width: 15%; 
-    padding: 12px; 
+    width: 25%;
+    padding: 12px;
+    max-height: 420px;
+    overflow: hidden; 
   }
 
   .trainer-card img {
     height: auto;
+    max-height: 200px;
+    object-fit: cover;
   }
 }

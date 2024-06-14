@@ -1,12 +1,13 @@
-import PT1 from "./PT1.jpg";
-import PT2 from "./PT2.jpg";
-import PT3 from "./PT3.jpg";
-import PT4 from "./PT4.jpg";
-import PT5 from "./PT5.jpg";
-import PT6 from "./PT6.jpg";
-import PT7 from "./PT7.jpg";
-import PT8 from "./PT8.jpg";
-import PT9 from "./PT9.jpg";
+import PT1 from "./Imgs/PT1.jpg";
+import PT2 from "./Imgs/PT2.jpg";
+import PT3 from "./Imgs/PT3.jpg";
+import PT4 from "./Imgs/PT4.jpg";
+import PT5 from "./Imgs/PT5.jpg";
+import PT6 from "./Imgs/PT6.jpg";
+import PT7 from "./Imgs/PT7.jpg";
+import PT8 from "./Imgs/PT8.jpg";
+import PT9 from "./Imgs/PT9.jpg";
+
 
 export const personalTrainers = [
   {
@@ -37,7 +38,7 @@ export const personalTrainers = [
   },
   {
     id: 3,
-    name: 'Brom Stoker',
+    name: 'Bram Stoker',
     skills: ['Martial Arts', 'Flexibility', 'Endurance Training'],
     qualifications: [
       'Vampire Slayer Fitness Expertise',
@@ -45,7 +46,7 @@ export const personalTrainers = [
       'Stamina for Long Nights',
       'Van Helsing Endurance Techniques'
     ],
-    description: `Greetings, I’m Brom Stoker! I specialize in martial arts, flexibility, and endurance training to help you fight your way to peak fitness! Whether you're preparing to face vampires or just looking to improve your agility and stamina, I'll tailor a regimen that suits your needs.`,
+    description: `Greetings, I’m Bram Stoker! I specialize in martial arts, flexibility, and endurance training to help you fight your way to peak fitness! Whether you're preparing to face vampires or just looking to improve your agility and stamina, I'll tailor a regimen that suits your needs.`,
     img: PT3
   },
   {

@@ -88,8 +88,8 @@ const Navbar = () => {
         </div>
         <div className="navigation">
           <ul>
-            <li><a href="/Contacts">Contact</a></li>
             <li><a href="/services">Services</a></li>
+            <li><a href="/FAQS">FAQS</a></li>
             <li><a href="/membership">Memberships</a></li>
           </ul>
         </div>
@@ -119,9 +119,9 @@ const Navbar = () => {
           <motion.li variants={itemVariants}><a href="/">Home</a></motion.li>
           <motion.li variants={itemVariants}><a href="/about">About</a></motion.li>
           <motion.li variants={itemVariants}><a href="/personaltrainers">Personal Trainers</a></motion.li>
-          <motion.li variants={itemVariants}><a href="/services">Services</a></motion.li>
+          <motion.li variants={itemVariants}><a href="/FAQS">FAQS</a></motion.li>
           <motion.li variants={itemVariants}><a href="/membership">Memberships</a></motion.li>
-          <motion.li variants={itemVariants}><a href="/contact">Contact us</a></motion.li>
+          <motion.li variants={itemVariants}><a href="/services">Services</a></motion.li>
         </ul>
       </motion.div>
     </nav>
