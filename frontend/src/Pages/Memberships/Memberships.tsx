@@ -1,7 +1,9 @@
 
 
 const Memberships = () => {
-  return <div>Memberships</div>;
+  return <section>
+    <h1>FAQS</h1>
+  </section>;
 };
 
 export default Memberships;

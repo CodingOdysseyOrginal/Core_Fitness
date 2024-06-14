@@ -28,9 +28,7 @@ const TrainerDetails = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // Implement your form submission logic here
     alert('Form submitted!');
-    // Reset form fields after submission (if needed)
     setName('');
     setEmail('');
     setPhone('');

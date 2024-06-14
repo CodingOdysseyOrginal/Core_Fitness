@@ -163,3 +163,81 @@ body {
 .contact-form button:hover {
   background-color: var(--primary-dark);
 }
+
+/* Media Query for Tablets */
+@media screen and (max-width: 1024px) {
+  .trainer-details {
+    padding: 30px;
+    max-width: 90%;
+  }
+
+  .trainer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qualifications {
+    max-width: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .details {
+    padding-left: 0;
+  }
+
+  .trainer-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trainer-header img {
+    width: 200px;
+    height: 200px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .trainer-header h2 {
+    text-align: center;
+  }
+}
+
+/* Media Query for Phones */
+@media screen and (max-width: 600px) {
+  .trainer-details {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .trainer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qualifications {
+    max-width: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .details {
+    padding-left: 0;
+  }
+
+  .trainer-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trainer-header img {
+    width: 150px;
+    height: 150px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .trainer-header h2 {
+    text-align: center;
+  }
+}

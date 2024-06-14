@@ -5,14 +5,16 @@ import About from "./Pages/About/About";
 import Services from "./Pages/Services/Services";
 import PersonalTrainers from "./Pages/PersonalTrainers/PersonalTrainers";
 import Membership from "./Pages/Memberships/Memberships";
-import "./index.css";
 import HomePage from "./Pages/HomePage/HomePage";
 import Footer from "./Components/Footer/Footer";
 import TrainerDetails from "./Pages/PersonalTrainerDetails/TrainerDetails";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
+import "./index.css";
 
 const App: React.FC = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -22,7 +24,7 @@ const App: React.FC = () => {
         <Route path="/trainer/:id" element={<TrainerDetails />} />
         <Route path="/membership" element={<Membership />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   );
 };
