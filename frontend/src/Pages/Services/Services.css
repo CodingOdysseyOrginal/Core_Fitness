@@ -1,0 +1,33 @@
+.ServicesContainer {
+    height: 120vh;
+    padding: 20px;
+  }
+  
+  .GymSection,
+  .PoolSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .GymSection img,
+  .PoolSection img {
+    height: 350px;
+    width: 450px;
+    margin: 20px;
+  }
+  
+  .GymSection h3,
+  .PoolSection h3 {
+    width: 40%;
+    height: auto;
+    background: linear-gradient(135deg, #ffffff, #e0e0e0);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  
