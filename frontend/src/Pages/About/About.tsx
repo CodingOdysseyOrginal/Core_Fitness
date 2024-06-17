@@ -9,18 +9,18 @@ const About: React.FC = () => {
     <section id="about" className="about-section">
       <div className="content">
         <motion.div
-          initial={{ opacity: 0, x: -300 }}
+          initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1 }}
         >
           <h1>Our History</h1>
         </motion.div>
         <div className="history-content">
           <motion.div
             className="history-text"
-            initial={{ opacity: 0, x: -300 }}
+            initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.5, delay: 0.3 }}
+            transition={{ duration: 1, delay: 0.3 }}
           >
             <p>
               Silverback Strength was born out of a personal journey. Our founder, Sarah, struggled to find a sense of community at the gyms she frequented. Despite the abundance of equipment and classes, she felt disconnected and lacked the support she needed to reach her fitness goals.
@@ -30,16 +30,16 @@ const About: React.FC = () => {
             src={Founder}
             alt="Founder"
             className="founder-image"
-            initial={{ opacity: 0, x: 300 }}
+            initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.5, delay: 0.6 }}
+            transition={{ duration: 1, delay: 0.6 }}
           />
         </div>
         <motion.div
           className="founder-section"
-          initial={{ opacity: 0, x: 300 }}
+          initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.5, delay: 0.9 }}
+          transition={{ duration: 1, delay: 0.9 }}
         >
           <h1>The Mission</h1>
           <p>
@@ -55,9 +55,9 @@ const About: React.FC = () => {
         </motion.div>
         <motion.div
           className="facility-section"
-          initial={{ opacity: 0, x: -300 }}
+          initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.5, delay: 1.2 }}
+          transition={{ duration: 1, delay: 1.2 }}
         >
           <h1>Our Facility</h1>
           <div className="gym-facilities">
@@ -65,9 +65,9 @@ const About: React.FC = () => {
               src={gym}
               alt="Gym Facility"
               className="facility-image"
-              initial={{ opacity: 0, x: 300 }}
+              initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1.5, delay: 1.5 }}
+              transition={{ duration: 1, delay: 1.5 }}
             />
             <div>
               <p>

@@ -1,5 +1,5 @@
 /* Importing a modern font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 #about {
   background-color: rgba(0, 0, 255, 0.5);
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow: hidden;
 }
 
@@ -118,22 +118,19 @@ p {
 
 .facility-button button {
   color: white;
-  background-color: #007BFF;
+  background-color: #007bff;
   padding: 20px;
   border-radius: 25%;
   cursor: pointer;
-  width: 210px;
-  margin-left: 20px;
   font-weight: 600;
   font-size: larger;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  transition: background-color 0.3s, box-shadow 0.3s; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .facility-button button:hover {
-  background-color: #FFD700;
+  background-color: #ffd700;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
   color: black;
 }
 
@@ -170,5 +167,4 @@ p {
     margin-left: 0;
     margin-top: 10px;
   }
-
 }

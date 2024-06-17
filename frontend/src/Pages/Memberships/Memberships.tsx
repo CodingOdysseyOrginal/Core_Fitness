@@ -2,7 +2,7 @@
 
 const Memberships = () => {
   return <section>
-    <h1>FAQS</h1>
+    <h1>Memberships</h1>
   </section>;
 };
 
