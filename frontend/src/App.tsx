@@ -11,6 +11,8 @@ import TrainerDetails from "./Pages/PersonalTrainerDetails/TrainerDetails";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import "./index.css";
 import FAQS from "./Pages/FAQS/FAQS";
+import Success from "./Pages/Payment/Success";
+import Cancel from "./Pages/Payment/Cancel";
 
 const App: React.FC = () => {
   return (
@@ -25,6 +27,8 @@ const App: React.FC = () => {
         <Route path="/personaltrainers" element={<PersonalTrainers />} />
         <Route path="/trainer/:id" element={<TrainerDetails />} />
         <Route path="/membership" element={<Membership />} />
+        <Route path="/success" element={<Success />} />
+        <Route path="/cancel" element={<Cancel />} />
       </Routes>
       <Footer />
     </Router>

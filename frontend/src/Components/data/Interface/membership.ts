@@ -1,6 +1,9 @@
+// src/data/Interface/membership.ts
 export interface Membership {
-    name: string;
-    description: string;
-    benefits: string[];
-    price: number;
-  }
+  id: string;
+  name: string;
+  description: string;
+  benefits: string[];
+  price: number;
+  
+}
