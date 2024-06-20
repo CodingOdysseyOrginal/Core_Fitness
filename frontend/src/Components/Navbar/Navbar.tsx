@@ -70,16 +70,16 @@ const Navbar = () => {
       <div className="container">
         <div className="navigation">
           <ul>
-            <li><a href="/about">About</a></li>
-            <li><a href="/personaltrainers">Personal Trainers</a></li>
-            <li><a href="/">Home</a></li>
+            <li><a href="/SilverBackStrength/about">About</a></li>
+            <li><a href="/SilverBackStrength/personaltrainers">Personal Trainers</a></li>
+            <li><a href="/SilverBackStrength/">Home</a></li>
           </ul>
         </div>
         <div className="logo">
           <a href="/">
             <img src={scrolled ? scrollImg : logo} alt="Gorilla" />
           </a>
-          <a className="title" href="/">
+          <a className="title" href="/SilverBackStrength/">
             Silverback <span>Strength</span>
           </a>
           <a href="/">
@@ -88,9 +88,9 @@ const Navbar = () => {
         </div>
         <div className="navigation">
           <ul>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/FAQS">FAQS</a></li>
-            <li><a href="/membership">Memberships</a></li>
+            <li><a href="/SilverBackStrength/services">Services</a></li>
+            <li><a href="/SilverBackStrength/FAQS">FAQS</a></li>
+            <li><a href="/SilverBackStrength/membership">Memberships</a></li>
           </ul>
         </div>
         <div className="MobileMenu">

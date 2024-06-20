@@ -52,7 +52,7 @@ const HomePage = () => {
           <motion.h1 variants={rightItemVariants}>
             We are more than a gym. We are a Community!
           </motion.h1>
-          <motion.a href="/membership" variants={leftItemVariants}>
+          <motion.a href="/SilverBackStrength/membership" variants={leftItemVariants}>
             <button>Join Today</button>
           </motion.a>
         </motion.div>
@@ -63,7 +63,7 @@ const HomePage = () => {
           With multiple gyms based in the West Midlands, we want to bring
           people together to achieve the best version of themselves!
         </h2>
-        <a href="/services">
+        <a href="/SilverBackStrength/services">
           <button>Our Community</button>
         </a>
       </div>
@@ -80,8 +80,8 @@ const HomePage = () => {
               text="Enhance your body with our state-of-the-art weight training facilities."
               imageUrl={Weights}
               buttonText="Join Today"
-              imgLink="/membership"
-              buttonLink="/membership"
+              imgLink="/SilverBackStrength/membership"
+              buttonLink="/SilverBackStrength/membership"
             />
           </motion.div>
           <motion.div variants={middleItemVariants}>
@@ -90,8 +90,8 @@ const HomePage = () => {
               text="Join our community classes and train with others to stay motivated."
               imageUrl={GymClass}
               buttonText="Learn More"
-              imgLink="/services"
-              buttonLink="/services"
+              imgLink="/SilverBackStrength/services"
+              buttonLink="/SilverBackStrength/services"
             />
           </motion.div>
           <motion.div variants={rightItemVariants}>
@@ -99,9 +99,9 @@ const HomePage = () => {
               title="Boxing Training"
               text="Sharpen your skills with our professional boxing training sessions."
               imageUrl={Gloves}
-              imgLink="/services"
+              imgLink="/SilverBackStrength/services"
               buttonText="Learn More"
-              buttonLink="/services"
+              buttonLink="/SilverBackStrength/services"
             />
           </motion.div>
         </motion.div>
@@ -147,7 +147,7 @@ const HomePage = () => {
             <h3>Mary Shelley</h3>
           </div>
         </Carousel>
-        <a href="/personaltrainers"><button>Personal Trainers</button></a>
+        <a href="/SilverBackStrength/personaltrainers"><button>Personal Trainers</button></a>
       </div>
     </>
   );

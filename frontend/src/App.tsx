@@ -20,15 +20,15 @@ const App: React.FC = () => {
       <ScrollToTop />
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/FAQS" element={<FAQS />} />
-        <Route path="/personaltrainers" element={<PersonalTrainers />} />
-        <Route path="/trainer/:id" element={<TrainerDetails />} />
-        <Route path="/membership" element={<Membership />} />
-        <Route path="/success" element={<Success />} />
-        <Route path="/cancel" element={<Cancel />} />
+        <Route path="/SilverBackStrength/" element={<HomePage />} />
+        <Route path="/SilverBackStrength/about" element={<About />} />
+        <Route path="/SilverBackStrength/services" element={<Services />} />
+        <Route path="/SilverBackStrength/FAQS" element={<FAQS />} />
+        <Route path="/SilverBackStrength/personaltrainers" element={<PersonalTrainers />} />
+        <Route path="trainer/:id" element={<TrainerDetails />} />
+        <Route path="/SilverBackStrength/membership" element={<Membership />} />
+        <Route path="/SilverBackStrength/success" element={<Success />} />
+        <Route path="/SilverBackStrength/cancel" element={<Cancel />} />
       </Routes>
       <Footer />
     </Router>

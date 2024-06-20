@@ -40,7 +40,7 @@ const TrainerDetails = () => {
   return (
     <div className="trainer-details">
       <div className="top-section">
-        <Link to="/personaltrainers" className="back-button">
+        <Link to="/SilverBackStrength/personaltrainers" className="back-button">
           Back to Personal Trainers
         </Link>
       </div>
