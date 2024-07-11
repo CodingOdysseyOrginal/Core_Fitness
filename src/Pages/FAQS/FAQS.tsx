@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./FAQS.css";
-
-type Props = {};
 
 type FAQItem = {
   question: string;
@@ -31,7 +29,7 @@ const faqItems: FAQItem[] = [
   },
 ];
 
-const FAQS = (props: Props) => {
+const FAQS = () => {
   const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
 
   const toggleAnswer = (index: number) => {

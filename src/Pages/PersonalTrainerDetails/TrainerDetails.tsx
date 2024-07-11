@@ -5,7 +5,8 @@ import { personalTrainers } from '../../Components/data/PersonalTrainersData';
 
 const TrainerDetails = () => {
   const { id } = useParams<{ id: string }>();
-  const trainer = personalTrainers.find((trainer) => trainer.id === parseInt(id));
+  const trainerId = id !== undefined ? parseInt(id) : 0;
+  const trainer = personalTrainers.find((trainer) => trainer.id === trainerId);
 
   if (!trainer) {
     return <div>Trainer not found</div>;

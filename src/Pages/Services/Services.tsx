@@ -1,4 +1,3 @@
-import React from "react";
 import "./Services.css";
 import GymPicture from "./GymPicture.jpg";
 import SwimmingPool from "./SwimmingPool.jpg";
