@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./Navbar.css";
 import logo from "./logo.svg";
@@ -70,34 +71,34 @@ const Navbar = () => {
       <div className="container">
         <div className="navigation">
           <ul>
-            <li><a href="/SilverBackStrength/about">About</a></li>
-            <li><a href="/SilverBackStrength/personaltrainers">Personal Trainers</a></li>
-            <li><a href="/SilverBackStrength/">Home</a></li>
+            <li><Link to="/SilverBackStrength/about">About</Link></li>
+            <li><Link to="/SilverBackStrength/personaltrainers">Personal Trainers</Link></li>
+            <li><Link to="/SilverBackStrength/">Home</Link></li>
           </ul>
         </div>
         <div className="logo">
-          <a href="/">
+          <Link to="/">
             <img src={scrolled ? scrollImg : logo} alt="Gorilla" />
-          </a>
-          <a className="title" href="/SilverBackStrength/">
+          </Link>
+          <Link className="title" to="/SilverBackStrength/">
             Silverback <span>Strength</span>
-          </a>
-          <a href="/">
+          </Link>
+          <Link to="/">
             <img src={scrolled ? scrollImg1 : logo3} alt="Gorilla" />
-          </a>
+          </Link>
         </div>
         <div className="navigation">
           <ul>
-            <li><a href="/SilverBackStrength/services">Services</a></li>
-            <li><a href="/SilverBackStrength/FAQS">FAQS</a></li>
-            <li><a href="/SilverBackStrength/membership">Memberships</a></li>
+            <li><Link to="/SilverBackStrength/services">Services</Link></li>
+            <li><Link to="/SilverBackStrength/FAQS">FAQS</Link></li>
+            <li><Link to="/SilverBackStrength/membership">Memberships</Link></li>
           </ul>
         </div>
         <div className="MobileMenu">
           <button className="sidebar-toggle" onClick={toggleSidebar}>
             <img src={sidebarVisible ? CloseIcon : MenuIcon} height={50} alt={sidebarVisible ? "Close sidebar" : "Toggle sidebar"} />
           </button>
-          <h1 className="title"><a href="/">Silverback <span>Strength</span></a></h1>
+          <h1 className="title"><Link to="/">Silverback <span>Strength</span></Link></h1>
         </div>
       </div>
 
@@ -110,18 +111,18 @@ const Navbar = () => {
           <button className="sidebar-toggle" onClick={toggleSidebar}>
             <img src={CloseIcon} alt="Close sidebar" />
           </button>
-          <a href="/" className="sidebar-logo">
+          <Link to="/" className="sidebar-logo">
             <img src={scrolled ? scrollImg : logo} alt="Gorilla" />
             <h1 className="title">Silverback <span>Strength</span></h1>
-          </a>
+          </Link>
         </div>
         <ul>
-          <motion.li variants={itemVariants}><a href="/">Home</a></motion.li>
-          <motion.li variants={itemVariants}><a href="/about">About</a></motion.li>
-          <motion.li variants={itemVariants}><a href="/personaltrainers">Personal Trainers</a></motion.li>
-          <motion.li variants={itemVariants}><a href="/FAQS">FAQS</a></motion.li>
-          <motion.li variants={itemVariants}><a href="/membership">Memberships</a></motion.li>
-          <motion.li variants={itemVariants}><a href="/services">Services</a></motion.li>
+          <motion.li variants={itemVariants}><Link to="/">Home</Link></motion.li>
+          <motion.li variants={itemVariants}><Link to="/about">About</Link></motion.li>
+          <motion.li variants={itemVariants}><Link to="/personaltrainers">Personal Trainers</Link></motion.li>
+          <motion.li variants={itemVariants}><Link to="/FAQS">FAQS</Link></motion.li>
+          <motion.li variants={itemVariants}><Link to="/membership">Memberships</Link></motion.li>
+          <motion.li variants={itemVariants}><Link to="/services">Services</Link></motion.li>
         </ul>
       </motion.div>
     </nav>
