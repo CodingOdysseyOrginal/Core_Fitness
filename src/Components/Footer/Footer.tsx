@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
             Email: <a href="mailto:info@gym.com">info@gym.com</a>
           </p>
           <p>
-            Phone: <a href="tel:+1234567890">+1 234 567 890</a>
+            Phones: <a href="tel:+1234567890">+1 234 567 890</a>
           </p>
           <p>Address: 123 Gym Street, Fitness City</p>
           <a href="#">
