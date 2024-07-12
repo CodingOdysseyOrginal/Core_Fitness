@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Carousel } from "react-responsive-carousel";
+import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./HomePage.css";
 import Card from "../../Components/Card/Card";
@@ -52,12 +53,11 @@ const HomePage = () => {
           <motion.h1 variants={rightItemVariants}>
             We are more than a gym. We are a Community!
           </motion.h1>
-          <motion.a
-            href="/SilverBackStrength/membership"
-            variants={leftItemVariants}
-          >
-            <button>Join Today</button>
-          </motion.a>
+          <motion.div variants={leftItemVariants}>
+            <Link to="/SilverBackStrength/membership">
+              <button>Join Today</button>
+            </Link>
+          </motion.div>
         </motion.div>
       </div>
       <div className="secondsection">
@@ -66,9 +66,9 @@ const HomePage = () => {
           With multiple gyms based in the West Midlands, we want to bring people
           together to achieve the best version of themselves!
         </h2>
-        <a href="/SilverBackStrength/services">
+        <Link to="/SilverBackStrength/services">
           <button>Our Community</button>
-        </a>
+        </Link>
       </div>
       <div className="thirdsection" ref={cardsRef}>
         <motion.div
@@ -173,9 +173,9 @@ const HomePage = () => {
             <h3>Mary Shelley</h3>
           </div>
         </Carousel>
-        <a href="/SilverBackStrength/personaltrainers">
+        <Link to="/SilverBackStrength/personaltrainers">
           <button>Personal Trainers</button>
-        </a>
+        </Link>
       </div>
     </>
   );

@@ -98,4 +98,8 @@
       margin-top: 20px;
     }
   }
-  
+  @media screen and (min-width: 1050px) {
+    .trainer-card {
+      height: 35vh;
+    }
+  }

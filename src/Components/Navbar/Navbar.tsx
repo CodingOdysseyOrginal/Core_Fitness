@@ -77,13 +77,13 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="logo">
-          <Link to="/">
+          <Link to="/SilverBackStrength/">
             <img src={scrolled ? scrollImg : logo} alt="Gorilla" />
           </Link>
           <Link className="title" to="/SilverBackStrength/">
             Silverback <span>Strength</span>
           </Link>
-          <Link to="/">
+          <Link to="/SilverBackStrength/">
             <img src={scrolled ? scrollImg1 : logo3} alt="Gorilla" />
           </Link>
         </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
           <button className="sidebar-toggle" onClick={toggleSidebar}>
             <img src={sidebarVisible ? CloseIcon : MenuIcon} height={50} alt={sidebarVisible ? "Close sidebar" : "Toggle sidebar"} />
           </button>
-          <h1 className="title"><Link to="/">Silverback <span>Strength</span></Link></h1>
+          <h1 className="title"><Link to="/SilverBackStrength/">Silverback <span>Strength</span></Link></h1>
         </div>
       </div>
 
@@ -111,18 +111,18 @@ const Navbar = () => {
           <button className="sidebar-toggle" onClick={toggleSidebar}>
             <img src={CloseIcon} alt="Close sidebar" />
           </button>
-          <Link to="/" className="sidebar-logo">
+          <a href="/SilverBackStrength/" className="sidebar-logo">
             <img src={scrolled ? scrollImg : logo} alt="Gorilla" />
             <h1 className="title">Silverback <span>Strength</span></h1>
-          </Link>
+          </a>
         </div>
         <ul>
-          <motion.li variants={itemVariants}><Link to="/">Home</Link></motion.li>
-          <motion.li variants={itemVariants}><Link to="/about">About</Link></motion.li>
-          <motion.li variants={itemVariants}><Link to="/personaltrainers">Personal Trainers</Link></motion.li>
-          <motion.li variants={itemVariants}><Link to="/FAQS">FAQS</Link></motion.li>
-          <motion.li variants={itemVariants}><Link to="/membership">Memberships</Link></motion.li>
-          <motion.li variants={itemVariants}><Link to="/services">Services</Link></motion.li>
+          <motion.li variants={itemVariants}><Link to="/SilverBackStrength/">Home</Link></motion.li>
+          <motion.li variants={itemVariants}><Link to="/SilverBackStrength/about">About</Link></motion.li>
+          <motion.li variants={itemVariants}><Link to="/SilverBackStrength/personaltrainers">Personal Trainers</Link></motion.li>
+          <motion.li variants={itemVariants}><Link to="/SilverBackStrength/FAQS">FAQS</Link></motion.li>
+          <motion.li variants={itemVariants}><Link to="/SilverBackStrength/membership">Memberships</Link></motion.li>
+          <motion.li variants={itemVariants}><Link to="/SilverBackStrength/services">Services</Link></motion.li>
         </ul>
       </motion.div>
     </nav>

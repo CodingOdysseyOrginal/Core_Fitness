@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import "./About.css";
 import gym from "./GymPicture.jpg";
 import Founder from "./Founder.jpg";
@@ -84,9 +85,9 @@ const About: React.FC = () => {
             </div>
           </div>
           <div className="facility-button">
-            <a href="./services">
+            <Link to="/SilverBackStrength/services">
               <button>Services</button>
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>

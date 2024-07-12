@@ -4,7 +4,6 @@ import { memberships } from '../../Components/data/Memberships';
 
 const Memberships: React.FC = () => {
 
-
   const handleCheckout = async (membershipId: string) => {
     try {
       const response = await fetch('http://localhost:4000/checkout', {
@@ -39,25 +38,27 @@ const Memberships: React.FC = () => {
           is to provide flexibility that suits your lifestyle.
         </p>
       </div>
-      <div className="MembershipOptions">
-        {memberships.map((membership, index) => (
-          <div key={index} className="MembershipOption">
-            <h2>{membership.name}</h2>
-            <p>{membership.description}</p>
-            <ul>
-              {membership.benefits.map((benefit, idx) => (
-                <li key={idx}>{benefit}</li>
-              ))}
-            </ul>
-            <p>Price: ${membership.price}</p>
-            <button 
-              className="checkout-button" 
-              onClick={() => handleCheckout(membership.id)}
-            >
-              Checkout
-            </button>
-          </div>
-        ))}
+      <div className="MembershipOptionsContainer">
+        <div className="MembershipOptions">
+          {memberships.map((membership, index) => (
+            <div key={index} className="MembershipOption">
+              <h2>{membership.name}</h2>
+              <p>{membership.description}</p>
+              <ul>
+                {membership.benefits.map((benefit, idx) => (
+                  <li key={idx}>{benefit}</li>
+                ))}
+              </ul>
+              <p>Price: ${membership.price}</p>
+              <button 
+                className="checkout-button" 
+                onClick={() => handleCheckout(membership.id)}
+              >
+                Checkout
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
