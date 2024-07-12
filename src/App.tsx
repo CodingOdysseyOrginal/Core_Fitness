@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import About from "./Pages/About/About";
 import Services from "./Pages/Services/Services";
@@ -16,7 +16,7 @@ import Cancel from "./Pages/Payment/Cancel";
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <Navbar />
       <Routes>
@@ -25,13 +25,13 @@ const App: React.FC = () => {
         <Route path="/SilverBackStrength/services" element={<Services />} />
         <Route path="/SilverBackStrength/FAQS" element={<FAQS />} />
         <Route path="/SilverBackStrength/personaltrainers" element={<PersonalTrainers />} />
-        <Route path="trainer/:id" element={<TrainerDetails />} />
+        <Route path="/trainer/:id" element={<TrainerDetails />} />
         <Route path="/SilverBackStrength/membership" element={<Membership />} />
         <Route path="/SilverBackStrength/success" element={<Success />} />
         <Route path="/SilverBackStrength/cancel" element={<Cancel />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 };
 
